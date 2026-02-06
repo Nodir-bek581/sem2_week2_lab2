@@ -14,11 +14,13 @@ public class problem7 {
                 break;
             }
             else {
-                System.out.print("Try again\n");
+                attempt--;
+                if(attempt>0) {
+                    System.out.print("Try again\n");
             }
-            attempt--;
-            if (attempt==0) {
-                System.out.println("Account locked");
+                else {
+                    System.out.println("Account Locked");
+                }
             }
         }
     }
